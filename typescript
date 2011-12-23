@@ -1,0 +1,56 @@
+Script started on Sun Oct 30 15:43:11 2011
+xwu77@hills:~/classes/unix/cs160b/asmt01$ 
+xwu77@hills:~/classes/unix/cs160b/asmt01$ #*** Assignment One - Xiao G. Wu
+xwu77@hills:~/classes/unix/cs160b/asmt01$ 
+xwu77@hills:~/classes/unix/cs160b/asmt01$ date
+Sun Oct 30 15:44:01 PDT 2011
+xwu77@hills:~/classes/unix/cs160b/asmt01$ pwd
+/students/xwu77/classes/unix/cs160b/asmt01
+xwu77@hills:~/classes/unix/cs160b/asmt01$ id
+uid=27119(xwu77) gid=581(b20107) groups=7069(c71768),7071(c71770),7192(c73577)
+xwu77@hills:~/classes/unix/cs160b/asmt01$ env
+SFTP_PERMIT_CHOWN=1
+MANPATH=/usr/share/man/%L:/usr/share/man:/usr/contrib/man/%L:/usr/contrib/man:/usr/local/man/%L:/usr/local/man:/usr/local/share/man/%L:/usr/local/share/man:/opt/VRTS/vxfs5.0/man:/opt/ldapux/share/man/%L:/opt/ldapux/share/man:/opt/ipf/man:/opt/ldapux/ypldapd/man:/opt/samba/man:/opt/samba/WTEC_Support_Tools/man:/opt/samba/cfsm_man:/opt/cifsclient/share/man:/opt/openssl/man:/opt/openssl/prngd/man:/opt/wbem/share/man/%L:/opt/wbem/share/man:/opt/graphics/common/man:/opt/amgr/man/%L:/opt/amgr/man:/opt/sec_mgmt/share/man:/opt/caliper/man/%L:/opt/caliper/man:/opt/drd/share/man/%L:/opt/drd/share/man:/opt/dsau/man:/opt/resmon/share/man/%L:/opt/resmon/share/man:/opt/gnome/man:/opt/ignite/share/man/%L:/opt/ignite/share/man:/opt/propplus/share/man:/usr/contrib/kwdb/share/man:/opt/perl_32/man:/opt/perl_64/man:/opt/prm/man/%L:/opt/prm/man:/opt/psb/healthtest/share/man:/opt/sfm/share/man:/opt/swm/share/man/%L:/opt/swm/share/man:/opt/swa/share/man/%L:/opt/swa/share/man:/opt/ssh/share/man:/opt/sentinel/man/%L:/opt/sentinel/man:/opt/langtools/share/man/%L:/opt/langtools/share/man:/opt/openssl/fips/0.9.7/man:/opt/openssl/fips/0.9.8/man:/opt/gwlm/man/%L:/opt/gwlm/man:/opt/icod/man/%L:/opt/icod/man:/opt/aCC/share/man/%L:/opt/aCC/share/man:/opt/cadvise/share/man/%L:/opt/cadvise/share/man:/opt/imake/man:/opt/perf/man/%L:/opt/perf/man:/opt/omni/lib/man:/opt/iexpress/curl/man:/opt/iexpress/pine/man:/opt/iexpress/tcpdump/man:/opt/iexpress/gnupg/man:/opt/iexpress/snort/man:/opt/iexpress/sudo/man:/opt/iexpress/tripwire/man:/opt/iexpress/ruby/share:/opt/iexpress/rubyrails/share:/opt/iexpress/python/man:/opt/iexpress/mysql/man:/opt/pgp/man:/opt/php/man:/opt/java6/jre/man:/opt/iexpress/ruby/share/man:/opt/iexpress/gnupg/share/man:/students/xwu77/man
+SHELL=/usr/bin/bash
+TERM=xterm
+ERASE=^?
+SSH_CLIENT=98.210.192.116 38465 22
+SSH_TTY=/dev/pts/17
+USER=xwu77
+PATH=/usr/local/bin:/usr/bin:/usr/ccs/bin:/usr/contrib/bin:/usr/contrib/Q4/bin:/opt/perl/bin:/opt/gvsd/bin:/opt/ipf/bin:/opt/nettladm/bin:/opt/fcms/bin:/opt/wbem/bin:/opt/wbem/sbin:/opt/sas/bin:/opt/graphics/common/bin:/opt/atok/bin:/usr/bin/X11:/usr/contrib/bin/X11:/opt/sec_mgmt/bastille/bin:/opt/caliper/bin:/opt/drd/bin:/opt/dsau/bin:/opt/dsau/sbin:/opt/resmon/bin:/opt/firefox:/opt/gnome/bin:/opt/ignite/bin:/opt/propplus/bin:/usr/contrib/kwdb/bin:/opt/perl_32/bin:/opt/perl_64/bin:/opt/prm/bin:/opt/sfm/bin:/opt/swm/bin:/opt/sec_mgmt/spc/bin:/opt/ssh/bin:/opt/swa/bin:/opt/hpsmh/bin:/opt/thunderbird:/opt/sentinel/bin:/opt/langtools/bin:/opt/gwlm/bin:/opt/aCC/bin:/opt/cadvise/bin:/opt/perf/bin:/opt/omni/bin:/opt/super/bin:/opt/pgp/bin:/opt/php/bin:/opt/java6/bin:/usr/sbin:/students/xwu77/bin:/students/xwu77/bin/scala-2.9.1.final/bin:/students/xwu77/bin/junit
+MAIL=/var/mail/xwu77
+PWD=/students/xwu77/classes/unix/cs160b/asmt01
+EDITOR=/usr/local/bin/vim
+TZ=PST8PDT
+PS1=\u@\h:\w$ 
+JUNIT_HOME=/students/xwu77/bin/junit
+HOME=/students/xwu77
+SFTP_PERMIT_CHMOD=1
+SHLVL=2
+BASH_ENV=/students/xwu77/.bashrc
+LOGNAME=xwu77
+LESS=efFMX
+PRINTER=iclpr3
+SSH_CONNECTION=98.210.192.116 38465 147.144.1.2 22
+CLASSPATH=:/students/xwu77/bin/junit/junit-4.10.jar:/students/xwu77/bin/junit
+SFTP_UMASK=
+_=/usr/bin/env
+xwu77@hills:~/classes/unix/cs160b/asmt01$ u quota -v
+Disk quotas for user xwu77 (uid 27119):
+Filesystem     usage  quota  limit    timeleft  files  quota  limit    timeleft
+/students     69699 250000 250050               5675  20000  20000            
+xwu77@hills:~/classes/unix/cs160b/asmt01$ ./aboutme
+You are logged in as xwu77 and your home directory is /students/xwu77
+Your default group is b20107 and your login shell is /usr/bin/bash
+You currently have 26 environment variables specified.
+You are using 69699 kB of your 250000 kB quota with 180301 kB remaining in your quota.
+You may temporarily be allowed an additional 50 kB if needed.
+You are using 5675 files of your 20000 files quota with 14325 files remaining in your quota.
+You may temporarily be allowed an additional 0 files if needed.
+xwu77@hills:~/classes/unix/cs160b/asmt01$ HOME=
+xwu77@hills:/students/xwu77/classes/unix/cs160b/asmt01$ ./aboutme
+./aboutme: line 4: HOME: variable needs to be specified
+xwu77@hills:/students/xwu77/classes/unix/cs160b/asmt01$ exit
+exit
+
+script done on Sun Oct 30 15:47:13 2011

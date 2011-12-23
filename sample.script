@@ -1,0 +1,64 @@
+Script started on Sat Apr 17 16:47:17 2010
+bash$ # Assignment One Greg Boyd
+bash$ id
+uid=3496(gboyd) gid=208(cisdept) groups=217(labstaff),3010(c36471),3023(c36505),3027(c36536),3029(c36538),3081(c38703),3107(c39302),3108(c39303),7061(c76115),7062(c76120),7064(c76131),7092(c77036),7160(c78728)
+bash$ pwd
+/pub/cs/gboyd/cs160b/asmt01
+bash$ date
+Sat Apr 17 16:49:50 PDT 2010
+bash$ 
+bash$ id
+uid=3496(gboyd) gid=208(cisdept) groups=217(labstaff),3010(c36471),3023(c36505),3027(c36536),3029(c36538),3081(c38703),3107(c39302),3108(c39303),7061(c76115),7062(c76120),7064(c76131),7092(c77036),7160(c78728)
+bash$ env
+SFTP_PERMIT_CHOWN=1
+MANPATH=/usr/share/man/%L:/usr/share/man:/usr/contrib/man/%L:/usr/contrib/man:/usr/local/man/%L:/usr/local/man:/opt/graphics/common/man:/opt/ignite/share/man/%L:/opt/ignite/share/man:/opt/ipf/man:/opt/ldapux/share/man:/opt/ldapux/ypldapd/man:/opt/cifsclient/share/man:/opt/openssl/man:/opt/openssl/prngd/man:/opt/wbem/share/man:/opt/amgr/man:/opt/amgr/man/%L:/usr/dt/share/man:/opt/samba/man:/opt/samba/WTEC_Support_Tools/man:/opt/resmon/share/man/%L:/opt/sec_mgmt/share/man:/opt/dsau/man:/opt/gnome/man:/opt/perf/man/%L:/opt/perf/man:/opt/VRTS/man:/opt/perl_32/man:/opt/perl_64/man:/opt/sec_mgmt/share/man/%L:/opt/ssh/share/man:/opt/swa/share/man/%L:/opt/swa/share/man:/opt/gwlm/man/%L:/opt/gwlm/man:/opt/drd/share/man/%L:/opt/drd/share/man:/opt/sfmdb/pgsql/man:/opt/sfm/share/man:/opt/aCC/share/man/%L:/opt/aCC/share/man:/opt/audio/share/man:/opt/langtools/share/man/%L:/opt/langtools/share/man:/opt/caliper/man/%L:/opt/caliper/man:/opt/cadvise/share/man/%L:/opt/cadvise/share/man:/opt/image/share/man:/opt/sentinel/man/%L:/opt/sentinel/man:/opt/imake/man:/opt/omni/lib/man:/opt/iexpress/curl/man:/opt/iexpress/pine/man:/opt/iexpress/procmail/man:/opt/iexpress/rsync/man:/opt/iexpress/tcpdump/man:/opt/iexpress/uw-imap/man:/opt/iexpress/clamav/man:/opt/iexpress/gnupg/man:/opt/iexpress/nessus/man:/opt/iexpress/snort/man:/opt/iexpress/stunnel/man:/opt/iexpress/sudo/man:/opt/iexpress/tripwire/man:/opt/iexpress/mysql/man:/opt/pgp/man:/opt/super/man:/opt/ruby/share/man:/opt/java6/jre/man:/opt/php/man:/opt/resmon/share/man:/users/gboyd/man
+TERM=dumb
+SHELL=/usr/bin/bash
+ERASE=^?
+SSH_CLIENT=216.27.180.236 42091 22
+__ARIES_PA_AOUT_MAXSSIZ=8388608
+SSH_TTY=/dev/pts/8
+USER=gboyd
+PTHREAD_COMPAT_MODE=0
+COLUMNS=80
+__ARIES_PA_STACK_SIZE_cur=8388608
+MAIL=/var/mail/gboyd
+PATH=/usr/bin:/usr/local/bin:/usr/ccs/bin:/usr/contrib/bin:/usr/contrib/Q4/bin:/opt/perl/bin:/opt/hparray/bin:/opt/nettladm/bin:/opt/fcms/bin:/usr/contrib/kwdb/bin:/usr/bin/X11:/opt/graphics/common/bin:/opt/upgrade/bin:/opt/ipf/bin:/opt/wbem/bin:/opt/wbem/sbin:/opt/resmon/bin:/opt/sas/bin:/opt/sec_mgmt/bastille/bin:/opt/dsau/bin:/opt/dsau/sbin:/opt/firefox:/opt/gnome/bin:/opt/perf/bin:/opt/ignite/bin:/opt/mozilla:/opt/perl_32/bin:/opt/iexpress/mysql/bin:/opt/sec_mgmt/spc/bin:/opt/ssh/bin:/opt/swa/bin:/opt/hpsmh/bin:/opt/thunderbird:/opt/gwlm/bin:/opt/drd/bin:/opt/sfm/bin:/usr/contrib/bin/X11:/opt/aCC/bin:/opt/caliper/bin:/opt/cadvise/bin:/opt/sentinel/bin:/opt/langtools/bin:/opt/omni/bin:/opt/lrzsz/bin:/opt/java6/bin:/opt/ruby/bin:/opt/pgp/bin:/opt/php/bin:/opt/super/bin:/opt/apache/bin:/users/gboyd/bin:.
+PWD=/pub/cs/gboyd/cs160b/asmt01
+TZ=PST8PDT
+LINES=24
+TAP_=27770
+SFTP_PERMIT_CHMOD=1
+HOME=/users/gboyd
+SHLVL=2
+BASH_ENV=/users/gboyd/.bashrc
+LESS=efFMX
+LOGNAME=gboyd
+SSH_CONNECTION=216.27.180.236 42091 147.144.1.2 22
+SFTP_UMASK=
+__ARIES_PA_STACK_SIZE_max=8388608
+_=/usr/bin/env
+bash$ 
+bash$ quota -v
+Disk quotas for gboyd (uid 3496):
+Filesystem     usage  quota  limit    timeleft  files  quota  limit    timeleft
+/users       234368 300000 300050               7941  30000  30000            
+bash$ 
+bash$ aboutme
+Hello gboyd -
+  Your home directory is /users/gboyd
+  Your default group is cisdept and your login shell is /usr/bin/bash
+  You currently have 28 environment variables defined.
+Currently, you have 234368 kB of space in use.
+   There is 65632 kB remaining in your quota.
+   It may temporarily allow you 50 additional kB if needed
+You have 7941 files. There are 22059 remaining in your quota.
+   It may temporarily allow you 0 additional files if needed
+bash$ 
+bash$ HOME=
+bash$ aboutme
+/users/gboyd/bin/aboutme: line 6: HOME: HOME variable must be set!
+bash$ exit
+exit
+
+script done on Sat Apr 17 16:50:19 2010

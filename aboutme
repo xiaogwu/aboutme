@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+#
+# This script outputs common user information (User login, home dir, 
+# default group and login shell). The script also details the user disk 
+# and file usage quotas and calculates how much disk and file quota is left.
+#
+# This script takes no options or arguments and requires no input.  
+#
+# To execute the script type ./aboutme
+#
+# This script outputs:
+#   User login
+#   User home directory
+#   User default group 
+#   User Shell
+#   Disk Usage
+#   Disk Quota
+#   Disk Quota remaining
+#   Any additional disk quota
+#   File Usage
+#   File Quota
+#   File Quota remaining
+#   Any additional file quota
+#
+# This script assumes env vars HOME, SHELL, and PATH are set.
+#
+
+# Check to make sure default environment variables are set, if not provide warning and terminate
+home=${HOME:?variable needs to be specified}
+shell=${SHELL:?variable needs to be specified}
+path=${PATH:?variable needs to be specified}
+
+# Define default group 
+def_group=$(id | sed 's|.*gid=[[:digit:]]*(\([^()]*\)) .*|\1|')
+
+# Determine number of environment variables that are set
+env_vars=$(env | wc -l)
+
+# Define disk and file usage.  Using the set -- command allows me set all necessary calculation variables quickly and with one call
+set -- $(quota -v | tail -n 1 | tr -s ' ')
+
+# Convenience variables
+disk_usage=$2
+disk_quota=$3
+disk_limit=$4
+files_usage=$5
+files_quota=$6
+files_limit=$7
+
+# Calculate disk and file usage, remaining quota, and additional allowance
+disk_remaining=$((disk_quota - disk_usage))
+temp_add_size=$((disk_limit - disk_quota))
+files_remaining=$((files_quota - files_usage))
+temp_add_files=$((files_limit - files_quota))
+
+# Output message
+echo "You are logged in as $USER and your home directory is $home"
+echo "Your default group is $def_group and your login shell is $shell"
+echo "You currently have $env_vars environment variables specified."
+echo "You are using $disk_usage kB of your $disk_quota kB quota with $disk_remaining kB remaining in your quota."
+echo "You may temporarily be allowed an additional $temp_add_size kB if needed."
+echo "You are using $files_usage files of your $files_quota files quota with $files_remaining files remaining in your quota."
+echo "You may temporarily be allowed an additional $temp_add_files files if needed."
+
+exit 0
