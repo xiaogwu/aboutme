@@ -1,0 +1,23 @@
+This script outputs common user information (User login, home dir, 
+default group and login shell). The script also details the user disk 
+and file usage quotas and calculates how much disk and file quota is left.
+
+This script takes no options or arguments and requires no input.  
+
+To execute the script type ./aboutme
+
+This script outputs:
+User login
+User home directory
+User default group 
+User Shell
+Disk Usage
+Disk Quota
+Disk Quota remaining
+Any additional disk quota
+File Usage
+File Quota
+File Quota remaining
+Any additional file quota
+
+This script assumes env vars HOME, SHELL, and PATH are set.
